@@ -3,7 +3,7 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-	{ name: "Projects", href: "https://github.com/Sir0s" },
+	{ name: "Projects", href: "https://github.com/Sir0s?tab=repositories" },
 	{ name: "Contact", href: "/contact" },
 ];
 
@@ -35,8 +35,8 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-lg text-zinc-500 ">
-					Hi, my name is Matias Solis (Sir0s) and im a Frontend Web Developer with so much to give to the world.
-					<br />Glad to meet your acquaintance.
+					Hi, my name is Matias Solis (Sir0s) and im a Frontend Web Developer.
+					<br />Nice to meet your acquaintance.
 				</h2>
 			</div>
 		</div>

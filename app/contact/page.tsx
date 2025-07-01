@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Github, Mail, Linkedin, ArrowDownToLine  } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -16,13 +16,19 @@ const socials = [
 		icon: <Mail size={20} />,
 		href: "mailto:maty.solis87@gmail.com",
 		label: "Email",
-		handle: "maty.solis87@gmail.com",
+		handle: "Email",
 	},
 	{
 		icon: <Github size={20} />,
 		href: "https://github.com/Sir0s",
 		label: "Github",
 		handle: "Sir0s",
+	},
+	{
+		icon: <ArrowDownToLine size={20} />,
+		href: "https://drive.google.com/file/d/1VUFtrfBgvNdthTmw6j7szvrjVdOxvrFV/view?usp=drive_link",
+		label: "Download CV",
+		handle: "Matias Solis",
 	},
 ];
 
@@ -31,7 +37,7 @@ export default function Example() {
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+				<div className="grid w-full grid-cols-1 gap-10 mx-auto mt-32 sm:mt-0 sm:grid-cols-4 lg:gap-16">
 					{socials.map((s) => (
 						<Card>
 							<Link
